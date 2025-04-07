@@ -1,0 +1,130 @@
+/* Navbar.css */
+nav {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-purple-500 {
+  color: #a855f7;
+}
+
+.text-purple-600 {
+  color: #9333ea;
+}
+
+.text-gray-700 {
+  color: #4a4a4a;
+}
+
+.transition-colors {
+  transition: color 0.3s ease;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.md\:flex {
+  display: flex;
+}
+
+.md\:space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+.md\:block {
+  display: block;
+}
+
+.md\:static {
+  position: static;
+}
+
+.md\:w-auto {
+  width: auto;
+}
+
+.md\:bg-transparent {
+  background: transparent;
+}
+
+.md\:p-0 {
+  padding: 0;
+}
+
+.md\:shadow-none {
+  box-shadow: none;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.md\:space-y-0 > * + * {
+  margin-top: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-white {
+  background: white;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.dashboard-btn {
+  background: #a855f7;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.dashboard-btn:hover {
+  background: #9333ea;
+}
+
+.bg-red-500 {
+  background: #ef4444;
+}
+
+.bg-red-600 {
+  background: #dc2626;
+}
