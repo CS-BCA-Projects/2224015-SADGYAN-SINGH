@@ -1,0 +1,101 @@
+/* ServiceRequest.css */
+.service-request-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  font-family: "Arial", sans-serif;
+  padding: 80px 20px 20px 20px; /* Added top padding to account for navbar height */
+  box-sizing: border-box;
+  position: relative; /* Ensure it works with overlay */
+}
+
+.service-request-box {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  z-index: 10; /* Ensure form is above overlay but below navbar */
+}
+
+.service-request-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.service-request-form {
+  width: 100%;
+}
+
+.service-request-input {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box;
+}
+
+.service-request-input::placeholder {
+  color: #aaa;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.service-request-btn {
+  background: #a855f7;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  color: white;
+  margin-top: 10px;
+  width: 100%; /* Ensure button takes full width */
+}
+
+.service-request-btn:hover {
+  background: #9333ea;
+}
+
+.service-request-preview {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .service-request-container {
+    padding: 70px 15px 15px 15px; /* Adjust padding for mobile */
+  }
+
+  .service-request-box {
+    padding: 20px; /* Reduce padding on mobile */
+  }
+
+  .service-request-title {
+    font-size: 1.5rem; /* Adjust title size for mobile */
+  }
+
+  .service-request-preview {
+    width: 150px; /* Adjust preview size for mobile */
+    height: 100px;
+  }
+}

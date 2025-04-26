@@ -1,0 +1,316 @@
+/* Navbar.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-purple-500 {
+  color: #a855f7;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-gray-700 {
+  color: #4a5568;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.transition-colors {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hover\:text-purple-300:hover {
+  color: #c4b5fd;
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: #e5e7eb;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-opacity-50 {
+  opacity: 0.5;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* From Old Navbar.css */
+.md\:shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 768px) {
+  .md\:shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+}
+
+/* New Professional Styling for Navbar */
+
+/* Navbar Container */
+nav.fixed.top-0.left-0.w-full {
+  background: linear-gradient(90deg, #ffffff 0%, #f7fafc 100%); /* Subtle gradient for a modern look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Softer shadow for depth */
+  border-bottom: 1px solid #e2e8f0; /* Light border for separation */
+}
+
+/* Logo */
+.text-2xl.font-bold.text-purple-500 {
+  font-family: "Inter", sans-serif; /* Modern font */
+  font-size: 1.75rem; /* Slightly larger logo */
+  letter-spacing: 0.05em; /* Spacing for readability */
+  transition: color 0.3s ease;
+}
+
+.text-2xl.font-bold.text-purple-500:hover {
+  color: #7f3bff; /* Slightly darker purple on hover */
+}
+
+/* Hamburger Menu Toggle */
+.text-black.focus:outline-none.z-50 {
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.text-black.focus:outline-none.z-50:hover {
+  background-color: #edf2f7; /* Light gray background on hover */
+}
+
+/* Slide-Out Menu */
+.fixed.top-0.left-0.h-full.w-64 {
+  background: linear-gradient(180deg, #2d3748 0%, #1a202c 100%); /* Gradient for depth */
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  border-right: 1px solid #4a5568; /* Subtle border */
+}
+
+/* Menu Items */
+.flex.flex-col.space-y-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Consistent spacing between items */
+  padding: 0.5rem;
+}
+
+.flex.flex-col.space-y-2 a {
+  display: block;
+  background-color: #4a5568; /* Dark background for each item */
+  padding: 0.75rem 1.5rem; /* Increased padding for better touch area */
+  border-radius: 10px; /* Rounded corners */
+  font-family: "Inter", sans-serif; /* Modern font */
+  font-size: 1.1rem; /* Slightly larger text */
+  font-weight: 500; /* Medium weight for readability */
+  text-align: center; /* Centered text */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.flex.flex-col.space-y-2 a:hover {
+  background-color: #718096; /* Lighter gray on hover */
+  transform: translateX(5px); /* Slight shift for interactivity */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+/* Close Button */
+.text-white.focus:outline-none.mb-4 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.w-6.h-6 {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2.5; /* Thicker lines for better visibility */
+}
+
+/* Overlay */
+.fixed.inset-0.bg-black.bg-opacity-50 {
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for better contrast */
+}
+
+/* Logout Button (for logged-in users) */
+.dashboard-btn {
+  background-color: #e53e3e !important; /* Red background for logout */
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 10px !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease !important;
+}
+
+.dashboard-btn:hover {
+  background-color: #c53030 !important; /* Darker red on hover */
+  transform: translateX(5px) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Welcome Text for Logged-in Users */
+.text-white.mb-2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #2b6cb0; /* Blue background for welcome message */
+  border-radius: 8px;
+  margin-bottom: 1rem !important;
+}
